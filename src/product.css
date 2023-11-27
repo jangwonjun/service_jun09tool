@@ -1,0 +1,10 @@
+.bord {
+    width : 80%;
+    height : 30%;
+    border : 3;
+    text-align: center;
+}
+
+th, td {
+  text-align: center;
+}

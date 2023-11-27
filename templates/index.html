@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>장원툴-상품조회</title>
+        <style>
+            /* 테이블 전체 스타일 */
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* 테이블 헤더 스타일 */
+            th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #ddd;
+            }
+            
+            /* 테이블 셀 스타일 */
+            td {
+                text-align: center;
+                padding: 8px;
+                border: 1px solid #ddd;
+            }
+        </style>
+    </head>
+<body>
+    <table>
+    <th>상품이름</th>
+    <th>브랜드</th>
+    <th>가격</th>
+    <tr>
+        <td>{{data[0][0]}}</td>
+        <td>{{data[0][1]}}</td>
+        <td>{{data[0][2]}}</td>
+    </tr>
+    <tr>
+        <td>{{data[1][0]}}</td>
+        <td>{{data[1][1]}}</td>
+        <td>{{data[1][2]}}</td>
+    </tr>
+    </table>
+    <form action="/numcode" method="POST">
+        <label for="number_code"></label>
+        <input type="text" id = "number_code" name = "barcode_number" required>
+        <input type="submit" value="조회">
+        
+    </form>
+    
+
+</body>
+</html>
